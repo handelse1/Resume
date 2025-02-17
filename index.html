@@ -7,32 +7,138 @@
 		<meta name="description" content="Online professional resume for Elmo from Seasame Street.">
 		<meta name="author" content="Sarah Handel">
 		<meta name="author" content="ChatGPT">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet">
+
+	<style>
+		h1 {
+			font-family:Hammersmith One;
+			text-transform: uppercase;
+			letter-spacing: 15px;
+			color: rgb(229,32,48);
+			font-size: 80px;
+			margin: 15px 10px;
+		}
+
+		body {
+			background-color: rgb(253,246,236);
+			background-image: url(sign.png);
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 166.66px 65px;
+			font-family: Georgia;
+			font-size: 17px;
+			color: rgb(27,54,90);
+			margin:0;
+			margin-bottom: 110px;
+		}
+
+		img{
+			border-radius: 50%;
+			border: 9px solid rgb(229,32,48);
+		}
+
+		#header {
+			text-align: center;
+			margin-top: 40px;
+	
+		}
+
+		#about h2, #education h2, #experience h2, #skills h2, #awards h2 {
+			font-family: Hammersmith One;
+			color: rgb(229,32,48);
+			font-size: 35px;
+		}
+
+		#about, #experience, #awards {
+			background: rgba(255,255,255,0.75);
+			padding: 10px 25px;
+			
+		}
+		
+		#education, #skills {
+			padding: 10px 25px;
+		}
+
+		a:link {
+			color: rgb(229,32,48);
+		}
+		a:visited {
+			color: rgb(183,28,36);
+		}
+		a:hover {
+			color: rgb(255,59,63);
+		}
+		a:active {
+			color: rgb(161,18,23);
+		}
+
+		ul.a , ul.b, ul.c, ul.d {
+			list-style-type: square;
+		}
+	
+		li::marker {
+  			color: rgb(245,166,35);
+		}
+
+ul.a, ul.b, ul.c, ul.d {
+    list-style: none
+}
+
+ul.a li, ul.b li, ul.c li, ul.d li {
+    background-image: url('face.jpg');
+    background-repeat: no-repeat;
+    background-size: 25px 18px; 
+    padding-left: 30px;
+    min-height: 30px;
+}
+
+h2::first-letter {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+	</style>
 	</head>
 
 
 	<body>
 
-<h1>Elmo</h1>
+<div id="header">
 <img src="elmophoto.png" alt="Headshot of Elmo smiling.">
+<h1>Elmo</h1>
+</div>
+
+
+<div id="about">
+<h2>About Me</h2>
 <p> <em>123 Sesame Street, New York, NY 10001 </em><br>
 <strong>Email: </strong> elmo@sesamestreet.com <br>
 <strong>Phone: </strong>(123) 456-7890 <br>
 <strong>LinkedIn: </strong> linkedin.com/in/elmo <br>
 </p>
+</div>
 
+
+<div id="education">
 <h2>Education</h2>
 <strong>Furry Friends Academy | <em>New York, NY </em> </strong> <br>
 Diploma in Early Childhood Communication, 2010
-<ul>
+<ul class="a">
 	<li>Specialized in laughter, joy, and engaging storytelling. </li>
 	<li>Class President from 2008 - 2009 </li>
 </ul>
+</div>
 
+
+<div id="experience">
 <h2>Experience </h2>
 
 <strong> <a href="https://www.sesamestreet.org" title="All about Seasame Street website." target="_blank">Sesame Street</a> |<em> New York, NY </em></strong><br>
 TV Personality & Educator | 1980 - Present <br>
-<ul>
+<ul class="b">
 	<li>Engages children worldwide with educational and entertaining content. </li>
 	<li>Teaches foundational skills, including ABCs, counting, and social-emotional learning. </li>
 	<li>Conducts interactive skits with celebrity guests and fellow Sesame Street friends. </li>
@@ -41,14 +147,17 @@ TV Personality & Educator | 1980 - Present <br>
 
 <strong>Elmo's World Productions |<em> New York, NY </em></strong><br>
 Creator & Host | 1998 - Present <br>
-<ul>
+<ul class="c">
 	<li>Developed and hosted "<a href="https://muppet.fandom.com/wiki/Elmo%27s_World" title="Muppet Wiki page about Elmo's World" target="_blank">Elmo's World,</a>" a beloved segment teaching kids about daily life topics. </li>
 	<li>Scripted, produced, and starred in educational videos focusing on learning through play. </li>
 	<li>Conducted interviews with pets, inanimate objects, and guest experts. </li>
 </ul>
+</div>
 
+
+<div id="skills">
 <h2>Skills </h2>
-<ul>
+<ul class="d">
 	<li>Enthusiastic Public Speaking </li>
 	<li>Early Childhood Education </li>
 	<li> <a href="https://www.youtube.com/watch?v=vSYadh2xmcI" title="Seasame Street: Elmo's Song" target="_blank">Musical Talent (Singing & Dancing)</a></li>
@@ -57,18 +166,18 @@ Creator & Host | 1998 - Present <br>
 	<li>Multilingual (Basic Spanish & Monster Language) </li>
 	<li>Hug Distribution & Ticklishness </li>
 </ul>
+</div>
 
 
-
+<div id="awards">
 <h2>Awards & Recognitions</h2>
 
-<ol>
+<ol class="e">
 	<li>Winner of the <strong>Fuzzy Heart Award for Excellence in Children's Entertainment</strong> - <em>2002 </em></li>
 	<li>Honored with the <strong>Giggle & Smile Lifetime Achievement Award </strong> - <em>2012</em> </li>
 	<li>Recognized by the <strong>Sesame Street Hall of Fame for Educational Impact</strong> - <em>1992 </em></li>
 </ol>
-
-
+</div>
 
 
 
